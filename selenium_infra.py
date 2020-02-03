@@ -4,6 +4,7 @@ class SeleniumInfra:
     def __init__(self, driver):
         self.driver = driver
         self.driver.implicitly_wait(10)  # wait up to 10 seconds when trying to find the element
+        self.driver.maximize_window()
     # load the given URL
     def get_URL(self, URL):
         try:
